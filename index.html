@@ -6,22 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon image links -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io-4/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io-4/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/./assets/images/favicon_io-4/favicon-16x16.png">
-<link rel="manifest" href="./assets/images/favicon_io-4/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io-4/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io-4/favicon-16x16.png">
+    <!--Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    <header class="relative container mx-auto bg-slate-500 p-6">
-    <h1 class="text-3xl">Weather Dashboard</h1>
-    </header>
-    <nav class="w-72 h-screen bg-slate-600">
-
+    <header class="bg-sky-800">
+    <!-- Nav Bar to display search bar and buttons -->
+    <nav class="relative container mx-auto p-5">
+        <div class="flex items-center justify-between p-6">
+    <h1 class="text-4xl text-center font-semibold">
+        <i class="fa-solid fa-cloud-sun"></i> Weather Dashboard</h1>
+    <form id="searchform">
+        <h2>Search by City:</h2>
+        <input type="text"
+         class = "rounded-md py-1 my-2" id="locationsearch"
+         placeholder="Search..."/>
+         <button class="rounded bg-sky-400 py-1 px-2"id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <button class="rounded bg-sky-400 py-1 px-2" id="search-history">Past Searches <i class="fa-solid fa-angle-down"></i></button>
+    </div>
     </nav>
-    <main>
+    </header>
+
+    <main class="w-full m-6">
+        <h2 class="text-center text-3xl">Your Weather Broadcast</h2>
+        <!--Section to display daily weather forecast-->
+        <section id="daily-weather">
+
+        </section>
+        <!--Section to display 5 day forecast-->
+        <section id="five-day">
+
+        </section>
 
     </main>
+    <!--Footer with copyright-->
+    <footer class="text-center">
+        © 2022 Made with <span class="text-red-600">❤</span> by Shelby Hernandez  
+    </footer>
 </body>
+<!--Jquery link-->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!--External JavaScript file-->
 <script src="./script.js"></script>
 </html>
