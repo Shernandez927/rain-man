@@ -16,7 +16,7 @@
 
 -Collaborators:
 
--Damien Shoemake: (https://github.com/Damien-Shoemake)
+- Damien Shoemake: (https://github.com/Damien-Shoemake)
 
 - Shawn Tschoepe: (https://github.com/shawn220a)
 
