@@ -14,7 +14,7 @@
 
 ## Credits
 
--Collaborators:
+- Collaborators:
 
 - Damien Shoemake: (https://github.com/Damien-Shoemake)
 

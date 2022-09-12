@@ -128,6 +128,16 @@ function displaySearchHistory(data) {
   pastSearchButton.textContent = data.city.name;
   searchHistoryEl.append(pastSearchButton);
 
+  pastSearchButton.addEventListener("click", function(){
+    var searchInput = pastSearchButton.textContent
+    getWeather(searchInput);
+  })
+
+  if (pastSearchButton.textContent){
+      searchCityEl.pastSearchButton.remove();
+      return;
+  }
+
 }
 
 
@@ -135,8 +145,4 @@ function displaySearchHistory(data) {
 // Event Listeners to run function
 searchFormEl.addEventListener("submit", handleSearchFormSubmit);
 
-pastSearchButton.addEventListener("click", function(){
-  var searchInput = pastSearchButton.textContent;
-  getWeather(searchInput);
-});
 
