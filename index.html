@@ -23,7 +23,7 @@
 <nav class="navbar navbar-light bg-primary justify-content-between border-bottom-dark">
   <h1 class="text-3xl mx-3 text-light"> <i class="fa-solid fa-cloud-sun"></i>Weather Dashboard</h1>
   <form class="form-inline my-2 mx-2" id="searchform">
-    <input class="form-control mr-sm-2" type="search" id="locationsearchinput" placeholder="Search by City..." aria-label="Search" id="">
+    <input class="form-control mr-sm-2" type="search" id="locationsearchinput" placeholder="Search by City..." aria-label="Search">
     <button class="btn btn-secondary my-2" type="submit" id="searchbtn">Search
       <i class="fa fa-search"></i></button>
   </form>
@@ -34,28 +34,67 @@
       <div class="row">
   
        <!-- List of Searched Cities from Local Storage -->
-        <div id="searchhistorycontainer" class="col-md-3 border-end p-3 justify-content-center">
+        <div class="col-md-3 border-end p-3">
           <h3>Past Searches:</h3>
-          <ul id="search-history" class="list-group mt-4"></ul>
-          <!-- Clear Search History button -->
-          <button class="btn btn-secondary" id="clear-storage">Clear Search History</button>
+          <div id="search-history" class="list-group mt-4 p-4">
+          </div>
         </div>
-<!-- Right side content showing current weather and five day forecast displays on search -->
-<!-- <div id="current-forecast" class="col-md-9 pt-4"> -->
   <!-- Current weather displayed on top -->
-  <div id="current-weather" class="col-md-9 p-4"></div>
+  <div id="current-weather" class="col-md-9 mr-5 ml-5 p-2 text-center justify-center">
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <button class="d-none"></button>
+  </div>
   <!-- Five day forecast below the current weather -->
-  <div id="five-day-forecast" class="mt-5"></div>
-</div>
-</div>
-</div>
+  <div id="five-day-forecast" class="mt-5 row">
+    <!--Days 1 through 5 for Five-day Forecast-->
+    <div id="day-0" class="col text-center m-2">
+      <h3 class="day"></h3>
+      <img class="icon">
+      <p class ="temp"></p>
+      <p class ="hum"></p>
+    </div>
+    <div id ="day-1" class="col text-center m-2">
+      <h3 class="day"></h3>
+      <img class="icon">
+      <p class ="temp"></p>
+      <p class ="hum"></p>
+    </div>
+
+    <div id="day-2" class="col text-center m-2">
+      <h3 class="day"></h3>
+      <img class="icon">
+      <p class ="temp"></p>
+      <p class ="hum"></p>
+    </div>
+
+    <div id="day-3" class="col text-center m-2">
+      <h3 class="day"></h3>
+      <img class="icon">
+      <p class ="temp"></p>
+      <p class ="hum"></p>
+    </div>
+
+    <div id="day-4" class="col text-center m-2">
+      <h3 class="day"></h3>
+      <img class="icon">
+      <p class ="temp"></p>
+      <p class ="hum"></p>
+    </div>
+  </div>
+
 </main>
     <!--Footer with copyright-->
-    <footer class="text-center">
+    <footer class="text-center mt-5">
       © 2022 Made with <span class="text-danger">❤</span> by Shelby Hernandez
     </footer>
   <!--Jquery link-->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Moment.JS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <!--External JavaScript file-->
   <script src="./script.js"></script>
 </body>

@@ -8,15 +8,17 @@
 
 ## Demo
 
-Provide instructions and examples for use. Include screenshots as needed.
+ - URL: (https://shernandez927.github.io/rain-man/)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+    ![screenshotgif](./assets/images/rain-mangif.gif)
 
 ## Credits
+
+-Collaborators:
+
+-Damien Shoemake: (https://github.com/Damien-Shoemake)
+
+- Shawn Tschoepe: (https://github.com/shawn220a)
 
 - Favicon created by favicon.io (https://favicon.io)
 
