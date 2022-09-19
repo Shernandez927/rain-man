@@ -1,3 +1,8 @@
 #searchhistorycontainer {
-    overflow-y: scroll;
+  overflow-y: scroll;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
